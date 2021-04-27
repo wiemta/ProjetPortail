@@ -1,44 +1,104 @@
 import React, { useState } from 'react';
 import './style1.css';
 
-export default function App() {
+export default function Java() {
 	const questions = [
 		{
-			questionText: 'What is the capital of France?',
+			questionText: 'Java est un langage',
 			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
+				{ answerText: 'Compilé', isCorrect: false },
+				{ answerText: 'Interprété', isCorrect: false },
+				{ answerText: 'Compilé et interprété', isCorrect: true },
+				{ answerText: 'Ni compilé ni interprété', isCorrect: false },
+			]
+		},
+		{
+			questionText: 'Lequel des éléments suivants n’est pas un concept POO en Java?',
+			answerOptions: [
+				{ answerText: 'Héritage', isCorrect: false },
+				{ answerText: 'Encapsulation', isCorrect: false },
+				{ answerText: 'Polymorphisme', isCorrect: false },
+				{ answerText: 'Compilation', isCorrect: true },
 			],
 		},
 		{
-			questionText: 'Who is CEO of Tesla?',
+			questionText: 'La méthode toString() est définie dans ________',
 			answerOptions: [
-				{ answerText: 'Jeff Bezos', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
-				{ answerText: 'Bill Gates', isCorrect: false },
-				{ answerText: 'Tony Stark', isCorrect: false },
+				{ answerText: 'java.lang.Object', isCorrect: true },
+				{ answerText: ' java.lang.String', isCorrect: false },
+				{ answerText: 'java.lang.util', isCorrect: true },
+				{ answerText: 'Aucune de ces réponses n’est vraie.', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'The iPhone was created by which company?',
+			questionText: 'String en Java est ______',
 			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
+				{ answerText: 'une classe', isCorrect: true},
+				{ answerText: 'un objet', isCorrect: false },
+				{ answerText: 'une variable', isCorrect: false },
+				{ answerText: 'un tableau de char', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'How many Harry Potter books are there?',
+			questionText: 'Donnez l’abréviation de AWT?',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
+				{ answerText: 'Applet Windowing Toolkit', isCorrect: false },
+				{ answerText: ' Abstract Windowing Toolkit', isCorrect: true },
+				{ answerText: 'Absolute Windowing Toolkit', isCorrect: false },
+				{ answerText: 'Aucune de ces réponses n’est vraie.', isCorrect: false },
 			],
 		},
+		{
+			questionText: 'Quel est le nom de la classe Swing utilisée pour créer un frame?',
+			answerOptions: [
+				{ answerText: 'Window', isCorrect: false },
+				{ answerText: 'Frame ', isCorrect: false },
+				{ answerText: 'JFrame', isCorrect: true },
+				{ answerText: 'SwingFrame', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'Quel package fournit des classes pour la gestion des événements?',
+			answerOptions: [
+				{ answerText: 'java.awt', isCorrect: false },
+				{ answerText: 'java.awt.Graphics', isCorrect: false},
+				{ answerText: 'java.awt.event', isCorrect: true},
+				{ answerText: 'Aucune de ces réponses n’est vraie.', isCorrect: false},
+			],
+		},
+        {
+			questionText: 'Dans java 8, Function est ________',
+			answerOptions: [
+				
+				{ answerText: 'Une classe', isCorrect: false },
+				{ answerText: 'Une interface', isCorrect: true},
+				{ answerText: 'Une expression lambda', isCorrect: false },
+				{ answerText: 'Un Objet', isCorrect: false },
+			],
+		},
+		{
+			questionText: 'Lequel de ces opérateurs est utilisé pour allouer de la mémoire à un tableau en Java?',
+			answerOptions: [
+				
+				{ answerText: 'new malloc', isCorrect: false },
+				{ answerText: ' alloc', isCorrect: false},
+				{ answerText: ' malloc', isCorrect: false },
+				{ answerText: 'new', isCorrect: true },
+			],
+		},
+		{
+			questionText: 'Lequel de ces énoncés est incorrect?',
+			answerOptions: [
+				
+				{ answerText: 'int tab[ ] = int [] new', isCorrect: true },
+				{ answerText: 'int tab[ ] = new int[4]', isCorrect: false},
+				{ answerText: 'int [ ] tab = new int[4]', isCorrect: false },
+				{ answerText: 'int tab[ ] = new int[4]', isCorrect: false },
+			],
+		},
+
+
+
 	];
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);

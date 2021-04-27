@@ -26,7 +26,7 @@ class Index extends Component {
         <div className="container position-relative" data-aos="zoom-in" data-aos-delay={100}>
           <h1>Apprendre aujourd'hui, <br />Diriger demain</h1>
         
-          <Link to='/quiz'><div className="btn-get-started">Testez-vous Maintenant</div></Link>
+          <Link to='/connecter'><div className="btn-get-started">Testez-vous Maintenant</div></Link>
 
         </div>
       </section>

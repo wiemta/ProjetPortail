@@ -33,6 +33,7 @@ class NavBar extends Component {
                         </ul></nav>{/* .navbar */}
                     <Link to='/connecter'><div className="get-started-btn">Se connecter</div></Link>
                     
+                    <Link to='/inscrire'><div className="get-started-btn">S'inscrire</div></Link>
 
                 </div>
             </header>
