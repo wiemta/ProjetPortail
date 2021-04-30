@@ -49,6 +49,17 @@ export default class Menu extends Component {
 
 
 
+               
+
+                <li className="nav-item">
+                  <a href="/profil" className="nav-link">
+                    <i className="nav-icon fas fa-calendar-alt" />
+                    <p>
+                      Profil
+                    <span className="badge badge-info right">2</span>
+                    </p>
+                  </a>
+                </li>
                 <li className="nav-item">
                   <a href="pages/calendar.html" className="nav-link">
                     <i className="nav-icon fas fa-calendar-alt" />
@@ -58,12 +69,11 @@ export default class Menu extends Component {
                     </p>
                   </a>
                 </li>
-
                 <li className="nav-item">
-                  <a href="/profil" className="nav-link">
+                  <a href="pages/calendar.html" className="nav-link">
                     <i className="nav-icon fas fa-calendar-alt" />
                     <p>
-                      Profil
+                    <Link to="/quiz">testez-vous</Link>
                     <span className="badge badge-info right">2</span>
                     </p>
                   </a>

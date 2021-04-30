@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
 import Header from './Header' ;
 import Footer from './Footer' ;
 import Menu from './Menu' ;
@@ -111,6 +112,7 @@ export default class Dashboard extends Component {
                         <th>Prix</th>
                         <th>Sales</th>
                         <th>More</th>
+                        <th>Test-vous</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -132,6 +134,11 @@ export default class Dashboard extends Component {
                             <i className="fas fa-search" />
                           </a>
                         </td>
+                        <td>
+                          <a href="#" className="text-muted">
+                          <Link to="/quiz">Test</Link>
+                          </a>
+                        </td>
                       </tr>
                       <tr>
                         <td>
@@ -149,6 +156,11 @@ export default class Dashboard extends Component {
                         <td>
                           <a href="#" className="text-muted">
                             <i className="fas fa-search" />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="#" className="text-muted">
+                          <Link to="/quiz">Test</Link>
                           </a>
                         </td>
                       </tr>
@@ -169,6 +181,12 @@ export default class Dashboard extends Component {
                           <a href="#" className="text-muted">
                             <i className="fas fa-search" />
                           </a>
+                          
+                        </td>
+                        <td>
+                          <a href="#" className="text-muted">
+                          <Link to="/quiz">Test</Link>
+                          </a>
                         </td>
                       </tr>
                       <tr>
@@ -188,6 +206,11 @@ export default class Dashboard extends Component {
                         <td>
                           <a href="#" className="text-muted">
                             <i className="fas fa-search" />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="#" className="text-muted">
+                          <Link to="/quiz">Test</Link>
                           </a>
                         </td>
                       </tr>
